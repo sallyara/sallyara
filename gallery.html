@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Menggunakan container yang sama agar ukurannya sama dengan halaman utama -->
+    <div class="card-container">
+        
+        <!-- BAGIAN 1: Navigasi Atas & Status -->
+        <div class="gallery-top-nav">
+            <div class="status-box">
+                <span class="status-label">status:</span>
+                <span class="status-value">OPEN</span>
+            </div>
+            
+            <div class="nav-buttons-group">
+                <a href="index.html" class="nav-box-btn">🏠<br>home</a>
+                <a href="prices.html" class="nav-box-btn">📜<br>prices</a>
+                <a href="gallery.html" class="nav-box-btn active-box">🎨<br>gallery</a>
+            </div>
+        </div>
+
+        <!-- BAGIAN 2: Header Gallery Tengah -->
+        <div class="gallery-viewing-header">
+            <p class="currently-text">currently viewing:</p>
+            <h1 class="gallery-main-title">ARTWORK GALLERY</h1>
+            <div class="gallery-sub-tabs">
+                <a href="gallery.html" class="sub-tab-btn active-tab">Art Gallery</a>
+                <a href="prices.html" class="sub-tab-btn">Pricing</a>
+            </div>
+        </div>
+
+        <!-- BAGIAN 3: Grid Foto/Artwork -->
+        <div class="gallery-showcase">
+            <div class="style-title-section">
+                <h2>Usual Order</h2>
+                <p>Wearable/amigurumi</p>
+            </div>
+            
+            <!-- Grid Gambar (ganti/tambah gambar di sini) -->
+            <div class="art-grid">
+                <div class="art-card"><img src="images/profile.jpg" alt="Art 1"></div>
+                <div class="art-card"><img src="images/profile.jpg" alt="Art 2"></div>
+                <div class="art-card"><img src="images/profile.jpg" alt="Art 3"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
