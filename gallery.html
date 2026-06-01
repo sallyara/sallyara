@@ -9,47 +9,54 @@
 </head>
 <body>
 
-    <!-- Menggunakan container yang sama agar ukurannya sama dengan halaman utama -->
     <div class="card-container">
         
-        <!-- BAGIAN 1: Navigasi Atas & Status -->
-        <div class="gallery-top-nav">
-            <div class="status-box">
-                <span class="status-label">status:</span>
-                <span class="status-value">OPEN</span>
+        <!-- BAGIAN 1: Header Terbelah (Sama dengan Terms & Prices) -->
+        <header class="terms-header-box">
+            <div class="terms-pfp-area">
+                <img src="images/profile.jpg" alt="Profile" class="terms-avatar">
             </div>
+            <div class="terms-info-area">
+                <h1 class="terms-name">🌱 name/name</h1>
+                <p class="terms-subtitle">he/him • artist & designer!</p>
+                <p class="terms-mini-rules">Commissions may take time due to school ^_^</p>
+                
+                <div class="terms-badge-row">
+                    <span class="terms-badge">status: open!</span>
+                    <span class="terms-badge">timezone: gmt+7</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- BAGIAN 2: Navigasi Kapsul (Tombol Gallery yang Aktif) -->
+        <nav class="terms-nav-bar">
+            <a href="index.html" class="terms-nav-pill">home</a>
+            <a href="terms.html" class="terms-nav-pill">t.o.s</a>
+            <a href="prices.html" class="terms-nav-pill">prices</a>
+            <a href="gallery.html" class="terms-nav-pill active-pill">gallery</a>
+        </nav>
+
+        <!-- BAGIAN 3: Konten Utama Gallery (Grid 2 Kolom) -->
+        <div class="new-gallery-box">
+            <h2 class="gallery-section-title"><u>Normal Style</u></h2>
             
-            <div class="nav-buttons-group">
-                <a href="index.html" class="nav-box-btn">🏠<br>home</a>
-                <a href="prices.html" class="nav-box-btn">📜<br>prices</a>
-                <a href="gallery.html" class="nav-box-btn active-box">🎨<br>gallery</a>
+            <p class="gallery-hint-text">
+                <em>Psst— Click on the images to look at them closer and read extra info about the prices if you were to commission a similar thing from me :)</em>
+            </p>
+            
+            <!-- Grid Gambar 2 Kolom (Ganti nama gambarnya dengan file milikmu sendiri) -->
+            <div class="gallery-2col-grid">
+                <div class="gallery-art-card"><img src="images/profile.jpg" alt="Art 1"></div>
+                <div class="gallery-art-card"><img src="images/profile.jpg" alt="Art 2"></div>
+                <div class="gallery-art-card"><img src="images/profile.jpg" alt="Art 3"></div>
+                <div class="gallery-art-card"><img src="images/profile.jpg" alt="Art 4"></div>
             </div>
         </div>
 
-        <!-- BAGIAN 2: Header Gallery Tengah -->
-        <div class="gallery-viewing-header">
-            <p class="currently-text">currently viewing:</p>
-            <h1 class="gallery-main-title">ARTWORK GALLERY</h1>
-            <div class="gallery-sub-tabs">
-                <a href="gallery.html" class="sub-tab-btn active-tab">Art Gallery</a>
-                <a href="prices.html" class="sub-tab-btn">Pricing</a>
-            </div>
-        </div>
-
-        <!-- BAGIAN 3: Grid Foto/Artwork -->
-        <div class="gallery-showcase">
-            <div class="style-title-section">
-                <h2>Usual Order</h2>
-                <p>Wearable/amigurumi</p>
-            </div>
-            
-            <!-- Grid Gambar (ganti/tambah gambar di sini) -->
-            <div class="art-grid">
-                <div class="art-card"><img src="images/profile.jpg" alt="Art 1"></div>
-                <div class="art-card"><img src="images/profile.jpg" alt="Art 2"></div>
-                <div class="art-card"><img src="images/profile.jpg" alt="Art 3"></div>
-            </div>
-        </div>
+        <!-- BAGIAN 4: Footer Bawah -->
+        <footer class="terms-footer-bar">
+            ( Made with Love )
+        </footer>
 
     </div>
 
