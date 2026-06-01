@@ -636,3 +636,38 @@ body {
     border: 2px dashed white; /* Memberi efek jahitan imut pengganti polkadot */
     margin-top: 10px;
 }
+/* ==========================================================
+   KODE SENSOR OTOMATIS UNTUK TAMPILAN HP (MOBILE RESPONSIVE)
+   ========================================================== */
+
+@media (max-width: 768px) {
+    /* 1. Mengubah susunan 3 kolom samping di halaman utama menjadi 1 kolom ke bawah */
+    .main-content {
+        grid-template-columns: 1fr; /* Kolom otomatis numpuk ke bawah */
+        gap: 20px;
+    }
+
+    /* 2. Mengatur ukuran kotak utama agar pas dengan layar HP */
+    .card-container {
+        padding: 15px;
+        margin: 5px;
+        width: 100%;
+    }
+
+    /* 3. Menyesuaikan tinggi gambar header di HP agar tidak terlalu besar */
+    .header-section {
+        height: 130px;
+    }
+
+    /* 4. Mengecilkan ukuran teks judul agar muat di HP */
+    .site-title {
+        font-size: 22px;
+        right: 15px;
+        top: 10px;
+    }
+
+    /* 5. Membuat susunan 2 kolom di dalam menu 'one' dan 'two' menjadi tegak lurus */
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
